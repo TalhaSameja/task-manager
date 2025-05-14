@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 
 function TaskList() {
-  const [tasks, setTasks] = useState([]);
+  // Start with 3 hardcoded tasks
+  const [tasks, setTasks] = useState([
+    'Buy groceries',
+    'Finish React assignment',
+    'Walk the dog'
+  ]);
   const [input, setInput] = useState('');
 
   const addTask = () => {
